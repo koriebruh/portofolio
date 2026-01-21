@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Github, Linkedin, Send, Terminal, CheckCircle2, AlertCircle } from 'lucide-react';
 import SectionReveal from '../ui/SectionReveal';
+import Sparkles from '../ui/Sparkles';
 
 const Contact = () => {
   const [formState, setFormState] = useState({
@@ -21,6 +22,9 @@ const Contact = () => {
       {/* Background Matrix/Grid Effect */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,black,transparent)] opacity-30" />
       
+      {/* Sparkles Effect */}
+      <Sparkles color="#b8956a" count={50} minSize={2} maxSize={5} />
+
       {/* Decorative Glows */}
       <div className="absolute top-1/4 -left-20 w-72 h-72 bg-gold/5 rounded-full blur-[100px]" />
       <div className="absolute bottom-1/4 -right-20 w-72 h-72 bg-primary-light/20 rounded-full blur-[100px]" />

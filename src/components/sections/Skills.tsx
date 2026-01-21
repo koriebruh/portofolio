@@ -9,6 +9,7 @@ import {
   SiSwagger
 } from 'react-icons/si';
 import SectionReveal from '../ui/SectionReveal';
+import Sparkles from '../ui/Sparkles';
 
 // gRPC Logo Component since it's not in react-icons standard pack sometimes or for custom look
 const GrpcLogo = ({ className }: { className?: string }) => (
@@ -64,6 +65,7 @@ const Skills = () => {
 
   return (
     <SectionReveal id="skills" className="py-32 relative overflow-hidden">
+      <Sparkles color="#b8956a" count={30} minSize={1} maxSize={3} className="opacity-25" />
       {/* Subtle Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
 

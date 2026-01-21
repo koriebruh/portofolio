@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ShoppingCart, Layout, Terminal } from 'lucide-react';
 import SectionReveal from '../ui/SectionReveal';
+import Sparkles from '../ui/Sparkles';
 
 const Projects = () => {
   const projects = [
@@ -26,8 +27,9 @@ const Projects = () => {
   ];
 
   return (
-    <SectionReveal id="projects" className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-6">
+    <SectionReveal id="projects" className="py-20 relative overflow-hidden">
+      <Sparkles color="#b8956a" count={40} minSize={2} maxSize={6} className="opacity-60" />
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
             Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-200">Projects</span>

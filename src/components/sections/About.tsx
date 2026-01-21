@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Server, Database, Globe } from 'lucide-react';
 import SectionReveal from '../ui/SectionReveal';
+import Sparkles from '../ui/Sparkles';
 
 const About = () => {
   const cards = [
@@ -28,8 +29,9 @@ const About = () => {
   ];
 
   return (
-    <SectionReveal id="about" className="py-20 relative">
-      <div className="max-w-7xl mx-auto px-6">
+    <SectionReveal id="about" className="py-20 relative overflow-hidden">
+      <Sparkles color="#b8956a" count={15} minSize={1} maxSize={3} className="opacity-30" />
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-accent-dim">About Me</span>

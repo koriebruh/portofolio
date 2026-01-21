@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import { SiGo, SiSpring, SiDocker, SiKubernetes } from 'react-icons/si';
 import Terminal from '../ui/Terminal';
+import Sparkles from '../ui/Sparkles';
 
 const Hero = () => {
   return (
@@ -10,6 +11,7 @@ const Hero = () => {
       {/* Background Elements */}
       <div className="absolute inset-0 bg-primary-dark">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,black,transparent)]" />
+        <Sparkles color="#b8956a" count={60} minSize={2} maxSize={5} className="z-0" />
         <div className="absolute top-1/4 -left-20 w-72 h-72 bg-blue-500/10 rounded-full blur-[100px]" />
         <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-gold/10 rounded-full blur-[100px]" />
       </div>

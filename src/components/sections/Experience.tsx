@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, Briefcase, GraduationCap } from 'lucide-react';
 import SectionReveal from '../ui/SectionReveal';
+import Sparkles from '../ui/Sparkles';
 
 const Experience = () => {
   const timeline = [
@@ -24,8 +25,9 @@ const Experience = () => {
   ];
 
   return (
-    <SectionReveal id="experience" className="py-20 bg-primary-dark/50">
-      <div className="max-w-4xl mx-auto px-6">
+    <SectionReveal id="experience" className="py-20 bg-primary-dark/50 relative overflow-hidden">
+      <Sparkles color="#b8956a" count={20} minSize={1} maxSize={3} className="opacity-30" />
+      <div className="max-w-4xl mx-auto px-6 relative z-10">
         <div className="mb-16 text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4">
             Journey <span className="text-gold">& Education</span>
