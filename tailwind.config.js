@@ -8,23 +8,32 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#1a2942', // Himmel blue
-          light: '#2d4263',
-          dark: '#0f1419', // Navy gradient start
+          DEFAULT: '#EDEAE1', // Warm sand cream base
+          light: 'rgba(255, 255, 255, 0.65)', // Translucent light card
+          dark: '#EDEAE1', // Warm sand cream background
         },
         accent: {
-          DEFAULT: '#e8f1f5', // Silver
-          dim: '#c9d6df',
+          DEFAULT: '#181E24', // Deep charcoal dark text
+          dim: '#4A5560', // Muted slate gray text
         },
         gold: {
-          DEFAULT: '#b8956a', // Soft gold
-          glow: '#d4af37',
-        }
+          DEFAULT: '#27B5D9', // Primary Cyan-Blue
+          glow: '#2CC9DA', // Vibrant Turquoise
+        },
+        cream: '#EDEAE1',
+        brandCyan: '#27B5D9',
+        brandTurquoise: '#2CC9DA',
+        brandMint: '#90E0DD',
+        brandGreenLight: '#9FD693',
+        brandGreen: '#87C76D',
+        brandLightCyan: '#47DCE2',
+        charcoal: '#181E24',
+        slate: '#4A5560',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-        heading: ['Space Grotesk', 'sans-serif'],
+        sans: ['"Product Sans"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+        heading: ['"Product Sans"', '"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

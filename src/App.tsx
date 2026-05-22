@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Hero from './components/sections/Hero';
@@ -10,7 +9,7 @@ import Contact from './components/sections/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen bg-primary-dark text-accent selection:bg-gold selection:text-primary-dark font-sans">
+    <div className="min-h-screen bg-primary text-accent selection:bg-brandMint/30 selection:text-accent font-sans">
       <Navbar />
       <main>
         <Hero />

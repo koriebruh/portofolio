@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   SiGo, 
@@ -9,164 +8,153 @@ import {
   SiSwagger
 } from 'react-icons/si';
 import SectionReveal from '../ui/SectionReveal';
-import Sparkles from '../ui/Sparkles';
-
-// gRPC Logo Component since it's not in react-icons standard pack sometimes or for custom look
-const GrpcLogo = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 512 512" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
-    <path d="M129.5 130.5V381H383.5V130.5H129.5ZM155 156H358V355.5H155V156Z"/>
-    <path d="M298.5 220.5H332V291.5H298.5V220.5Z"/>
-    <path d="M180 220.5H213.5V291.5H180V220.5Z"/>
-    <path d="M129.5 96H383.5V121.5H129.5V96Z" fillOpacity="0.5"/>
-    <path d="M129.5 390.5H383.5V416H129.5V390.5Z" fillOpacity="0.5"/>
-  </svg>
-);
 
 const Skills = () => {
   const mainStack = [
-    { name: "Golang", icon: <SiGo size={50} />, color: "#00ADD8", bg: "rgba(0, 173, 216, 0.1)" },
-    { name: "Spring Boot", icon: <SiSpringboot size={50} />, color: "#6DB33F", bg: "rgba(109, 179, 63, 0.1)" },
-    { name: "MySQL", icon: <SiMysql size={50} />, color: "#4479A1", bg: "rgba(68, 121, 161, 0.1)" },
-    { name: "Docker", icon: <SiDocker size={50} />, color: "#2496ED", bg: "rgba(36, 150, 237, 0.1)" },
-    { name: "RabbitMQ", icon: <SiRabbitmq size={50} />, color: "#FF6600", bg: "rgba(255, 102, 0, 0.1)" },
+    { name: "Golang", icon: <SiGo size={46} />, color: "#27B5D9", bg: "rgba(39, 181, 217, 0.08)" },
+    { name: "Spring Boot", icon: <SiSpringboot size={46} />, color: "#87C76D", bg: "rgba(135, 199, 109, 0.08)" },
+    { name: "MySQL", icon: <SiMysql size={46} />, color: "#2CC9DA", bg: "rgba(44, 201, 218, 0.08)" },
+    { name: "Docker", icon: <SiDocker size={46} />, color: "#47DCE2", bg: "rgba(71, 220, 226, 0.08)" },
+    { name: "RabbitMQ", icon: <SiRabbitmq size={46} />, color: "#FF9800", bg: "rgba(255, 152, 0, 0.08)" },
   ];
 
   const protocols = [
     { 
       name: "gRPC", 
       icon: (
-        <div className="w-full h-full flex items-center justify-center font-bold text-lg tracking-tighter">
+        <div className="w-full h-full flex items-center justify-center font-bold text-base tracking-tighter">
           gRPC
         </div>
       ), 
-      color: "#244c5a", 
-      bg: "rgba(36, 76, 90, 0.2)"
+      color: "#27B5D9", 
+      bg: "rgba(39, 181, 217, 0.08)"
     },
     { 
       name: "REST", 
-      icon: <SiSwagger size={40} />, 
-      color: "#85EA2D", 
-      bg: "rgba(133, 234, 45, 0.1)"
+      icon: <SiSwagger size={36} />, 
+      color: "#87C76D", 
+      bg: "rgba(135, 199, 109, 0.08)"
     },
     { 
       name: "Microservices", 
       icon: (
-        <svg viewBox="0 0 24 24" width="40" height="40" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
+        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
           <rect x="2" y="2" width="9" height="9" rx="2"/>
           <rect x="13" y="2" width="9" height="9" rx="2"/>
           <rect x="2" y="13" width="9" height="9" rx="2"/>
           <rect x="13" y="13" width="9" height="9" rx="2"/>
         </svg>
       ),
-      color: "#A855F7", 
-      bg: "rgba(168, 85, 247, 0.1)"
+      color: "#2CC9DA", 
+      bg: "rgba(44, 201, 218, 0.08)"
     }
   ];
 
   return (
-    <SectionReveal id="skills" className="py-32 relative overflow-hidden">
-      <Sparkles color="#b8956a" count={30} minSize={1} maxSize={3} className="opacity-25" />
-      {/* Subtle Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-[400px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
-
+    <SectionReveal id="skills" className="py-28 relative overflow-hidden bg-primary/20">
+      {/* Soft Background Glows */}
+      <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-80 h-80 bg-brandMint/15 rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-brandCyan/10 rounded-full blur-[120px] pointer-events-none" />
+ 
       <div className="max-w-5xl mx-auto px-6 relative z-10 text-center">
-        <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6">
-          Core <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-200">Technologies</span>
+        <span className="text-xs font-mono font-semibold tracking-wider text-brandCyan uppercase mb-2 block">Technical Expertise</span>
+        <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6 text-accent">
+          Core <span className="bg-clip-text text-transparent bg-gradient-to-r from-brandCyan to-brandGreen">Technologies</span>
         </h2>
-        <p className="text-accent-dim text-lg mb-20 max-w-2xl mx-auto">
-          High-performance stack for scalable systems.
+        <p className="text-accent/60 text-lg mb-20 max-w-2xl mx-auto font-sans">
+          A modern, high-performance stack optimized for scalable systems and microservices.
         </p>
-
+ 
         {/* Main Stack Floating Icons */}
-        <div className="flex flex-wrap justify-center gap-10 md:gap-16 mb-24">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 mb-24">
           {mainStack.map((tech, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.85 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               animate={{ 
-                y: [-10, 10, -10],
-                rotate: [0, 5, -5, 0]
+                y: [-6, 6, -6],
+                rotate: [0, 2, -2, 0]
               }}
               transition={{ 
                 y: {
-                  duration: 4 + idx, // Varied duration
+                  duration: 5 + idx,
                   repeat: Infinity,
                   ease: "easeInOut"
                 },
                 rotate: {
-                  duration: 5 + idx, // Varied duration
+                  duration: 6 + idx,
                   repeat: Infinity,
                   ease: "easeInOut"
                 },
-                opacity: { duration: 0.5 },
-                scale: { duration: 0.5 }
+                opacity: { duration: 0.4 },
+                scale: { duration: 0.4 }
               }}
-              className="relative group cursor-pointer"
+              className="relative group cursor-pointer animate-none"
             >
               <div 
-                className="w-24 h-24 md:w-28 md:h-28 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:border-gold/50 group-hover:shadow-[0_0_30px_rgba(184,149,106,0.2)]"
+                className="w-20 h-20 md:w-24 md:h-24 bg-white/90 backdrop-blur-md rounded-2xl border border-accent/5 flex items-center justify-center transition-all duration-300 group-hover:border-brandCyan/30 group-hover:shadow-[0_12px_25px_rgba(24,30,36,0.03)]"
                 style={{ 
-                  boxShadow: `0 0 30px ${tech.bg}`
+                  boxShadow: `0 8px 30px ${tech.bg}`
                 }}
               >
-                <div className="text-accent group-hover:scale-110 transition-transform duration-300" style={{ color: tech.color }}>
+                <div className="text-accent group-hover:scale-105 transition-transform duration-300" style={{ color: tech.color }}>
                   {tech.icon}
                 </div>
               </div>
               
               {/* Tooltip */}
-              <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-mono text-gold whitespace-nowrap">
+              <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs font-mono font-semibold text-brandCyan bg-white border border-accent/5 px-2.5 py-1 rounded-lg shadow-sm whitespace-nowrap">
                 {tech.name}
               </div>
             </motion.div>
           ))}
         </div>
-
+ 
         {/* Protocols / Architecture Floating Icons */}
-        <div className="flex flex-wrap justify-center gap-10 md:gap-16 items-center">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 items-center">
            {protocols.map((proto, idx) => (
              <motion.div
                key={idx}
-               initial={{ opacity: 0, scale: 0.8 }}
+               initial={{ opacity: 0, scale: 0.85 }}
                whileInView={{ opacity: 1, scale: 1 }}
                viewport={{ once: true }}
                animate={{ 
-                 y: [10, -10, 10], // Opposite phase to main stack
-                 rotate: [0, -5, 5, 0]
+                 y: [6, -6, 6], 
+                 rotate: [0, -2, 2, 0]
                }}
                transition={{ 
                  y: {
-                   duration: 5 + idx,
-                   repeat: Infinity,
-                   ease: "easeInOut",
-                   delay: 1
-                 },
-                 rotate: {
                    duration: 6 + idx,
                    repeat: Infinity,
                    ease: "easeInOut",
-                   delay: 1
+                   delay: 0.5
                  },
-                 opacity: { duration: 0.5 },
-                 scale: { duration: 0.5 }
+                 rotate: {
+                   duration: 7 + idx,
+                   repeat: Infinity,
+                   ease: "easeInOut",
+                   delay: 0.5
+                 },
+                 opacity: { duration: 0.4 },
+                 scale: { duration: 0.4 }
                }}
                className="relative group cursor-pointer"
              >
                <div 
-                 className="w-24 h-24 md:w-28 md:h-28 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 flex items-center justify-center transition-all duration-300 group-hover:border-gold/50 group-hover:shadow-[0_0_30px_rgba(184,149,106,0.2)]"
+                 className="w-20 h-20 md:w-24 md:h-24 bg-white/90 backdrop-blur-md rounded-2xl border border-accent/5 flex items-center justify-center transition-all duration-300 group-hover:border-brandCyan/30 group-hover:shadow-[0_12px_25px_rgba(24,30,36,0.03)]"
                  style={{ 
-                    boxShadow: `0 0 30px ${proto.bg}`
+                    boxShadow: `0 8px 30px ${proto.bg}`
                  }}
                >
-                 <div className="text-accent group-hover:scale-110 transition-transform duration-300" style={{ color: proto.color }}>
+                 <div className="text-accent group-hover:scale-105 transition-transform duration-300" style={{ color: proto.color }}>
                    {proto.icon}
                  </div>
                </div>
                 
                {/* Tooltip */}
-               <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-mono text-accent-dim/80">
+               <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-xs font-mono font-semibold text-brandCyan bg-white border border-accent/5 px-2.5 py-1 rounded-lg shadow-sm whitespace-nowrap">
                  {proto.name}
                </div>
              </motion.div>

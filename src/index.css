@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/product-sans-2');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +8,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    background-color: #EDEAE1;
   }
   
   body {
@@ -14,25 +16,36 @@
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading;
+    @apply font-heading tracking-tight;
   }
 }
 
 @layer utilities {
   .glass-card {
-    @apply bg-primary-light/30 backdrop-blur-md border border-accent/10 shadow-xl;
+    @apply bg-white/60 backdrop-blur-md border border-accent/5 shadow-[0_10px_35px_rgba(24,30,36,0.02)];
   }
   
   .glass-panel {
-    @apply bg-primary/40 backdrop-blur-lg border border-accent/5;
+    @apply bg-white/45 backdrop-blur-lg border border-accent/5 shadow-sm;
   }
   
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent to-accent-dim;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold to-accent;
   }
   
   .text-gold-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold to-gold-glow;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold to-[#87C76D];
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: -24;
+    }
+  }
+
+  .flow-line {
+    stroke-dasharray: 6, 6;
+    animation: dash 1s linear infinite;
   }
 }
 
@@ -42,14 +55,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f1419;
+  background: #EDEAE1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2d4263;
+  background: #c2beb3;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b8956a;
+  background: #27B5D9;
 }
