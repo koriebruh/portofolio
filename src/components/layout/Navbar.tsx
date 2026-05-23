@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Terminal, Github, Linkedin, Mail } from 'lucide-react';
+import { Menu, X, Terminal, Github, Linkedin, Mail, Instagram } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,11 +59,14 @@ const Navbar = () => {
             animate={{ opacity: 1, scale: 1 }}
             className="flex items-center gap-4 ml-4 border-l border-accent/10 pl-6"
           >
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="text-accent-dim hover:text-accent transition-colors">
+            <a href="https://github.com/koriebruh/" target="_blank" rel="noreferrer" className="text-accent-dim hover:text-accent transition-colors" title="GitHub">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="text-accent-dim hover:text-accent transition-colors">
+            <a href="https://www.linkedin.com/in/mjamaludinnur/" target="_blank" rel="noreferrer" className="text-accent-dim hover:text-accent transition-colors" title="LinkedIn">
               <Linkedin size={20} />
+            </a>
+            <a href="https://www.instagram.com/mjamaludin92/" target="_blank" rel="noreferrer" className="text-accent-dim hover:text-accent transition-colors" title="Instagram">
+              <Instagram size={20} />
             </a>
           </motion.div>
         </div>
@@ -97,9 +100,10 @@ const Navbar = () => {
                 </a>
               ))}
               <div className="flex gap-6 mt-4">
-                <a href="#" className="text-accent hover:text-gold transition-colors"><Github /></a>
-                <a href="#" className="text-accent hover:text-gold transition-colors"><Linkedin /></a>
-                <a href="#" className="text-accent hover:text-gold transition-colors"><Mail /></a>
+                <a href="https://github.com/koriebruh/" target="_blank" rel="noreferrer" className="text-accent hover:text-gold transition-colors" title="GitHub"><Github /></a>
+                <a href="https://www.linkedin.com/in/mjamaludinnur/" target="_blank" rel="noreferrer" className="text-accent hover:text-gold transition-colors" title="LinkedIn"><Linkedin /></a>
+                <a href="https://www.instagram.com/mjamaludin92/" target="_blank" rel="noreferrer" className="text-accent hover:text-gold transition-colors" title="Instagram"><Instagram /></a>
+                <a href="#contact" className="text-accent hover:text-gold transition-colors" title="Email"><Mail /></a>
               </div>
             </div>
           </motion.div>

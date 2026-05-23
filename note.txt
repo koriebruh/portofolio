@@ -1,0 +1,72 @@
+out information :
+name = muhammad jamaludin nur
+github = https://github.com/koriebruh/
+LINKEDIN = https://www.linkedin.com/in/mjamaludinnur/
+IG	 = https://www.instagram.com/mjamaludin92/
+
+
+FEATURE PROJECT 1 link project : https://github.com/koriebruh/banking-services
+Enterpise Banking Microservices System
+ada beberapa serive yang gw pake
+1. Authentication Service, dimana serivice ini mengunakan JWT dan totp untuk otentikasi dan otorisasi pengguna, mengunakan stack spring-boot, redis, postgres
+2. Account Service, dimana service ini mengelola informasi akun pengguna, termasuk saldo, transaksi, dan riwayat keuangan. Service ini menggunakan stack spring-boot, progres dan menjadi grpc server
+3. Transfer Service, transfer service ini connect grpc server account service unutk memvalidasi saldo anntar account ini menugnakan golang dan posgress
+4. Notification Service, menerima semua event penting yang harus di sampaikan ke pengunga dengan realtime mengunakan golang webshocket dan send notif ke email
+5. Audit Service, mencatat semua event dan melakuakn penulisan standar biar mudah di baca dan di analisis menggunakan golang dan posgress
+6. API Gateway, mengunakan spring cloud gateway untuk mengatur routing dan load balancing antar service, serta mengelola otentikasi dan otorisasi pengguna
+7. Service Discovery, mengunakan netflix eureka
+8. Load Balancer, nginx
+
+Infrastructure yang gw pake
+1. Docker
+2. Grafana Stack (Grafana, Alloy, Tempo, Loki)
+3. Kafka
+4. MailHog
+
+dan itu juga sudah menerapakan patteern seperti circuit breaker, retry, DQL, OutBox Transactional dan fallback untuk meningkatkan ketahanan sistem.
+
+
+FETURE PROJECT 2: link project : https://github.com/koriebruh/payment-service
+Payament serive yang integrate dengan midtrans
+Service ini integrasi dengan Midtrans Mengunakan Goalng, redis, redis dll ini juga udah implemntations Obeservability seperti tracing, logging dan metrics, dan juga udah implementasi
+pattern seperti circuit breaker, retry, DQL, OutBox Transactional dan fallback untuk meningkatkan ketahanan sistem.
+
+infrastructure yang gw pake
+1. Docker
+2. Grafana Stack (Grafana, Alloy, Tempo, Loki)
+3. Kafka
+4. Postgres, Postgres Exporter
+5. Redis
+
+
+FETURE PROJECT 3
+KASIH NOT FOUND
+
+EXPERIENCE nanti anda urutakan ajah ya sesuai tanggal atau gimana lah atur aja:
+1. Backend Engineer di PT. Firstudio Semarang Jan 2025 - july 2025
+   ini mengunakan golang dan mysql
+   • Built a Citizen Management System for 24,000+ resident records with 43 REST API endpoints — letting city admins
+   manage population data across departments in real time.
+   • Secured the service with API Key auth and rate limiting; deployed to production VPS via Docker for consistent,
+   repeatable releases
+
+
+2. web developer intern di PWM JATENG Semarang Feb 2025 - April 2025
+   ini mengunaakn wordpress dan mysql
+   Delivered websites for two divisions featuring event registration, donation tracking, and org info — moving their
+   manual workflows fully online within 2 months.
+
+3. Student Mentor di SMA Kanisius Semarang Des 2023
+    workshop teaching programming fundamentals and logical problem-solving to junior students
+
+KULIAH  GW DI Universitas Dian Nuswantoro Semarang, jurusan Teknik Informatika, lulus pada tahun sept 2022 - feb 2026 arount 3 year beapa gitu dengan IPK 3.65
+dan gw juga ada publikasi jurnal di internasional
+
+Best Paper Award · IEEE Xplore, ISEMANTIC 2025
+First author of a peer-reviewed ML paper on customer churn prediction (CatBoost + domain feature engineering) —
+awarded Best Paper among all conference submissions.
+ini link paper nya : https://ieeexplore.ieee.org/document/11291801
+ini natinya gw tambahakan bisa donwload lansung atau baca lansgung gitu gimana bagusnya di sini file pdf berada di root folder /1571175002 final.pdf
+
+
+

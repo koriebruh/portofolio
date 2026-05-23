@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-primary border-t border-accent/5 py-12">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-accent/50 text-sm font-medium">
-          © {new Date().getFullYear()} Backend Dev. All rights reserved.
+          © {new Date().getFullYear()} Muhammad Jamaludin Nur. All rights reserved.
         </div>
         
         <div className="flex gap-6 text-sm text-accent/50">

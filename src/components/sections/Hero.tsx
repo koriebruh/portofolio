@@ -96,7 +96,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-accent/70 text-base md:text-lg mb-8 max-w-lg leading-relaxed font-sans">
-            Hi, I'm a Backend Developer specializing in engineering fast, highly-concurrent, and fault-tolerant microservice nodes and data flow pipelines.
+            Hi, I'm <strong>Muhammad Jamaludin Nur</strong>, a Backend Developer specializing in engineering fast, highly-concurrent, and fault-tolerant microservice nodes and data flow pipelines.
           </p>
           
           <div className="flex flex-wrap gap-4">
