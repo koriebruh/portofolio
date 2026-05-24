@@ -81,7 +81,7 @@ const Contact = () => {
     'w-full bg-white/60 border rounded-xl px-4 py-3 text-accent placeholder:text-accent/30 text-sm font-sans focus:outline-none transition-all duration-200 resize-none';
 
   return (
-    <SectionReveal id="contact" className="py-28 relative overflow-hidden bg-primary">
+    <SectionReveal id="contact" className="py-28 relative overflow-hidden bg-transparent">
       {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(24,30,36,0.015)_1px,transparent_1px),linear-gradient(90deg,rgba(24,30,36,0.015)_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,black,transparent)] pointer-events-none" />
       <div className="absolute top-1/4 -left-24 w-96 h-96 bg-brandCyan/10 rounded-full blur-[130px] pointer-events-none" />

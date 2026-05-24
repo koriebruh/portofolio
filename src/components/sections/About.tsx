@@ -12,7 +12,7 @@ const About = () => {
   const activeHandlers = Math.round(load / 450);
 
   return (
-    <SectionReveal id="about" className="py-28 relative overflow-hidden bg-primary/40">
+    <SectionReveal id="about" className="py-28 relative overflow-hidden bg-transparent">
       {/* Background Glows */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-1/3 -right-20 w-80 h-80 bg-brandMint/10 rounded-full blur-[100px]" />

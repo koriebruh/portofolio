@@ -81,7 +81,7 @@ const Experience = () => {
   ];
 
   return (
-    <SectionReveal id="experience" className="py-28 relative overflow-hidden bg-primary/20">
+    <SectionReveal id="experience" className="py-28 relative overflow-hidden bg-transparent">
       {/* Subtle bg glows */}
       <div className="absolute bottom-0 left-1/4 w-96 h-72 bg-brandGreenLight/10 rounded-full blur-[110px] pointer-events-none" />
       <div className="absolute top-0 right-1/3 w-72 h-72 bg-brandCyan/8 rounded-full blur-[90px] pointer-events-none" />

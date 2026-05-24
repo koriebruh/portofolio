@@ -71,7 +71,7 @@ const Skills = () => {
   ];
 
   return (
-    <SectionReveal id="skills" className="py-28 relative overflow-hidden bg-primary/20">
+    <SectionReveal id="skills" className="py-28 relative overflow-hidden bg-transparent">
       {/* Soft background glows */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-brandMint/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-0 right-1/4 w-80 h-80 bg-brandCyan/8 rounded-full blur-[100px] pointer-events-none" />

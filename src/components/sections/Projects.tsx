@@ -91,7 +91,7 @@ const Projects = () => {
   ];
 
   return (
-    <SectionReveal id="projects" className="py-28 relative overflow-hidden bg-primary/40">
+    <SectionReveal id="projects" className="py-28 relative overflow-hidden bg-transparent">
       {/* Background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(24,30,36,0.012)_1px,transparent_1px),linear-gradient(90deg,rgba(24,30,36,0.012)_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,black,transparent)] pointer-events-none" />
       <div className="absolute top-0 right-1/3 w-96 h-96 bg-brandMint/10 rounded-full blur-[130px] pointer-events-none" />

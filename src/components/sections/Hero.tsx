@@ -65,7 +65,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-28 pb-16 relative overflow-hidden bg-primary">
+    <section className="min-h-screen flex items-center justify-center pt-28 pb-16 relative overflow-hidden bg-transparent">
       {/* Premium organic blurred blobs matching the user's custom sand-cream and green-cyan theme */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(24,30,36,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(24,30,36,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,black,transparent)]" />
